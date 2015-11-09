@@ -28,14 +28,13 @@ The zabbix templates need be imported and associated to each supervised nodes.
 
 - Import templates (following your needs).  
 - On the collectors nodes :  
-<<<<<<< HEAD
 	* Untar the package in the externalscripts zabbix directory (usually /usr/local/share/zabbix/externalscripts)  
-	* Be sure that all collectors files owner and group are set to zabbix:zabbix.
-		
+	* Be sure that all collectors files owner and group are set to zabbix:zabbix.  
+@TODO	
 
-##Limitations
+##Limitations  
+
 The collectors scripts are probably not compatible with a secured environment. They don't take in account the possibility to provide a user/password to get access to a securised JMX/JSON interfaces. It's in the roadmap.
-=======
   * Untar the package in the externalscripts zabbix directory (usually /usr/local/share/zabbix/externalscripts)  
   * Be sure that all collectors files owner and group are set to zabbix:zabbix. 
   * 
@@ -43,5 +42,3 @@ The collectors scripts are probably not compatible with a secured environment. T
 		
 ##Limitations
 The collectors scripts are probably not compatible with a secured environment. They don't take in account the possibility to provide a user/password to get access to a securised JMX/JSON interfaces. It's in the roadmap.
-
->>>>>>> 8ad195b5c6d7dc5093ea452057f64c46275e1a16
