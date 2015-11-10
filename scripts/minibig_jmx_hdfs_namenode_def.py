@@ -25,9 +25,9 @@ def get_rpc(jsonbeansdata,hostsource,epoch_time):
     print hostsource+" rpc_BlockReportAvgTime "+str(epoch_time)+" "+str(jsonbeansdata[pointer_id].get('BlockReportAvgTime'))
 
 def get_nn_ugi(jsonbeansdata,hostsource,epoch_time):
-    pointer_id = get_metricscategory_position(jsonbeansdata, 'Hadoop:service=NameNode,name=UgiMetrics')
+	pointer_id = get_metricscategory_position(jsonbeansdata, 'Hadoop:service=NameNode,name=UgiMetrics')
 	print hostsource+" nn_ugi_LoginSuccessNumOps "+str(epoch_time)+" "+str(jsonbeansdata[ugi_pointer_id].get('LoginSuccessNumOps'))
-    print hostsource+" nn_ugi_LoginFailureNumOps "+str(epoch_time)+" "+str(jsonbeansdata[ugi_pointer_id].get('LoginFailureNumOps'))
+   	print hostsource+" nn_ugi_LoginFailureNumOps "+str(epoch_time)+" "+str(jsonbeansdata[ugi_pointer_id].get('LoginFailureNumOps'))
 
 def get_fsnamesys(jsonbeansdata,hostsource,epoch_time):
     pointer_id = get_metricscategory_position(jsonbeansdata, 'Hadoop:service=NameNode,name=FSNamesystemState')
