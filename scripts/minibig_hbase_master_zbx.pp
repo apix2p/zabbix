@@ -48,10 +48,18 @@ def main():
 			context = arg
 
 	jsonbeansdata = mje.load_jmx("http://"+str(server)+":"+str(port)+str(context))
+<<<<<<< HEAD
 	mjhbase.get_hb_ugi(jsonbeansdata,server,epoch_time)
 	mjhbase.get_hb_jvm(jsonbeansdata,server,epoch_time)
 	mjhbase.get_hb_sys(jsonbeansdata,server,epoch_time)
 	mjhbase.get_hb_ipc(jsonbeansdata,server,epoch_time)
+=======
+
+	mjhbase.get_ugi(jsonbeansdata,server,epoch_time)
+	mjhbase.get_jvm(jsonbeansdata,server,epoch_time)
+	mjhbase.get_hbsys(jsonbeansdata,server,epoch_time)
+	mjhbase.get_ipc(jsonbeansdata,server,epoch_time)
+>>>>>>> 2af3a80f2cf18413e1d7a98d6674dfc912b47837
 	mjhbm.get_assignmentManger(jsonbeansdata,server,epoch_time)
 	mjhbm.get_master(jsonbeansdata,server,epoch_time)
 	mjjcms.get_marksweep(jsonbeansdata,server,epoch_time)
